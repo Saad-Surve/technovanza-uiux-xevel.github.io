@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xevel</title>
+    <link rel="stylesheet" href="buy.css">
+   
+        <script src="buy.js"></script>
+</head><body>
+<header><div id="h"><div id="h1"><img src="logo2.png" alt="logo2"><span id="name">XEVEL</span></div>
+    <div id="h2"><button><a href="index.html">Home</a></button><button><a href="buy.html">Buy</a></button></div></div>
+</header>
+<section class="buy">
+<div id="b1"><img src="phantom_black.jpg" alt="phantom_black" id="image" ></div>
+<div id="b2"><div id="buy_heading">Customise your Xevel 1 <br><br></div>
+<form>
+    <div class="color">Choose your color:<br>
+Phantom Black: <input type="radio" name="color" onclick="change_image()"  checked class="color1">
+Phantom Silver: <input type="radio" name="color" onclick="change_image()" class="color1">
+</div><br><br><br><br>
+<div class="ram">Choose your preferred ram:<br><div>
+<span>6GB RAM: <input type="radio" name="ram" checked onclick="price()" class="ram1" ></span>
+<span>8GB RAM: <input type="radio" name="ram" onclick="price()" class="ram1"></span>
+<span>12GB RAM: <input type="radio" name="ram" onclick="price()" class="ram1"></span>
+<span>16GB RAM: <input type="radio" name="ram" onclick="price()" class="ram1"></span></div>
+</div> <br><br><br><br>
+<div class="memory">Choose your preferred internal memory:<br>
+    <span>128GB : <input type="radio" name="memory" checked onclick="price()" class="memory1"></span>
+    <span>256GB : <input type="radio" name="memory" onclick="price()" class="memory1"></span>
+    <span>512GB : <input type="radio" name="memory" onclick="price()" class="memory1"></span>
+    <span>1TB : <input type="radio" name="memory" onclick="price()" class="memory1"></span>
+    </div>
+    <br><br>
+    <div id="p">Price:<span id="price"></span></div>
+    
+</form><br>
+<button type="submit" onclick="submit()">BUY</button><br>
+</div>
+</section>
+<hr size="5" color="5">
+<footer>
+  <div class="copyright">Copyright 2003-2021 &copy;Xevel. All rights reserved. </div>
+  <div class="social">
+      <a href="twitter.com" target="_blank"><img src="twitter.png" id="s1" alt="twitter"></a><a href="https://www.instagram.com" target="_blank"><img src="insta.png"  alt="instagram"></a>
+  </div>
+</footer>
+</body>
+</html>

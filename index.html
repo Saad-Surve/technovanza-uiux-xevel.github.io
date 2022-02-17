@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Xevel</title>
+    <link rel="stylesheet" href="index.css">
+
+</head><body>
+<header><div id="h"><div id="h1"><img src="logo2.png" alt="logo2"><span id="name">XEVEL</span></div>
+    <div id="h2"><button><a href="index.html">Home</a></button>
+      <button><a href="buy.html">Buy</a></button></div></div>
+</header>
+<section class="intro">
+<div id="intro_tag"><strong> Redefining The Way You Think About Smartphones. <br>Introducing the Xevel X1</strong>. </div><br>
+
+<div class="slideshow-container">
+
+    <div class="mySlides fade">
+      <div class="numbertext">1 / 3</div>
+      <img src="intropic.jpeg" style="width:100%">
+      
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">2 / 3</div>
+      <img src="intropic4.jpg" style="width:100%">
+      
+    </div>
+    
+    <div class="mySlides fade">
+      <div class="numbertext">3 / 3</div>
+      <img src="intropic3.jpeg" style="width:100%">
+      
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
+    </div>
+    <br>
+    
+    <div style="text-align:center">
+      <span class="dot" onclick="currentSlide(1)"></span> 
+      <span class="dot" onclick="currentSlide(2)"></span> 
+      <span class="dot" onclick="currentSlide(3)"></span> 
+    </div>
+    <br>
+</section>
+<hr size="5" color="5">
+<section class="features_chip">
+<div id="fc1"><strong>Introducing the fastest SoC in a Smartphone.</strong><br>The NappBeast 888+</div>
+<br>
+<div id="fc2"><div class="pics"><img src=chip1.jpg></div><div class="pics"><img src="chip.png" alt="chip"></div><div class="pics"><img src="chip2.jpg"></div></div>
+<div id="fc3">&#9733 Upto <strong>200%</strong> better CPU processing than any other SoC &#9733</div><br>
+<div id="fc4">&#9733 Upto <strong>350%</strong> better GPU processing than any other SoC &#9733</div>
+</section>
+<hr size="5" color="black">
+<section class="features_camera"><div id="fca1">
+<div><strong> Best Camera Combination in a Smartphone.</strong></div></div><div id="fca2">
+<div id="fca2_1">A 108 MP megapixel camera <img src="img1.jpg" alt="108mppic"></div>
+<div id="fca2_2">A 150 degree ultrawide camera <img src="img2.jpg" alt="ultrawide pic"></div>
+<div id="fca2_3">A 3x and 10x telephoto for immense zoom photos. <img src="img3.jpg" alt="zoom pic"></div>
+</div>
+
+
+</section>
+<hr size="5" color="5">
+<section class="battery">
+<div id="b1"><img src="battry.jpg" alt="battery"></div>
+<div id="b2"><strong>The biggest Battery and Fastest charging(120W) in the same phone.</strong></div>
+<div id="b3"><img src="battry2.jpg" alt="battery"></div>
+</section>
+<section class="battery_phone"><div id="bp_tag">The biggest Battery and Fastest charging(120W) in the same phone.</div><div id="bpsubsection"><div id="bp1"><img src="battryphone.jpg"></div>
+<div id="bp2"><img src="battry2.jpg" alt="battery"></div></div></section>
+<hr size="5" color="5">
+<section class="eco">
+<div class="e1">Xevel For The Planet</div>
+<div class="e1">At Xevel, Each smartphone is prepared with such materials that it is expected to remove 30 million pounds of trash from the sea every million smartphones.</div>
+<div><img src="eco.jpg" alt="earth"></div>
+
+</section>
+<hr size="5" color="5">
+<section class="final">
+<div id="f1">One Last thing...</div><br><br>
+<div id="f2">Starting Price is ONLY 599$</div>
+</section>
+<hr size="5" color="5">
+<footer>
+  <div class="copyright">Copyright 2003-2021 &copy;Xevel. All rights reserved. </div>
+  <div class="social">
+      <a href="twitter.com" target="_blank"><img src="twitter.png" id="s1" alt="twitter"></a><a href="https://www.instagram.com" target="_blank"><img src="insta.png"  alt="instagram"></a>
+  </div>
+</footer>
+<script>
+    var slideIndex = 1;
+    showSlides(slideIndex);
+    
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+    
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+    
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("dot");
+      if (n > slides.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " active";
+    }
+    </script>
+</body>
+</html>
