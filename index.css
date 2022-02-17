@@ -35,7 +35,7 @@ header{
     border-style: none;
     border-radius: 5px;
     padding: 10px 0px;
-    background-color:lightgreen;
+  
     margin: 10px;
 }
 #h2  button a{
@@ -47,7 +47,7 @@ header{
 padding: 10px 10px;
 }
 #h2 button a:hover{
-    background-color: white;
+    background-color:#b7f6f5;
     transition:0.5s ease-in-out;
     
 }
@@ -276,7 +276,7 @@ text-align: center;
 flex-direction: column;
 padding: 15px;
 font-size: 40px;
-background-color: yellowgreen;
+background-color:#7af19b;
 }
 .eco img{
 max-width: 50%;
@@ -289,8 +289,8 @@ footer{
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: gray;
-  color: white;
+  background-color: #d4dddc;
+  color: black;
 }
 .copyright{
   width: 60%;
@@ -376,8 +376,9 @@ footer{
   #name{
     display: none;
 }
+#h2 button
 #intro_tag{
-  font-size: 48px;
+  font-size: 31px;
 }
 .pics{
   width: 100%;
@@ -385,12 +386,18 @@ footer{
 }
 .features_chip img{
   border-radius: 50px;
+}#fc1{
+  font-size: 43px;
 }
 #fca2{
   flex-direction: column;
 }
 #fc3,#fc4{
   width: 100%;
+  font-size: 41px;
+}
+.features_camera{
+  font-size: 40px;
 }
 #fc2{
   flex-direction: column;
@@ -398,6 +405,7 @@ footer{
 #fca2_1, #fca2_2, #fca2_3 {
    width: 90%;
   margin: 10px auto;
+  font-size: 35px;
   }
   .battery{
     display: none;

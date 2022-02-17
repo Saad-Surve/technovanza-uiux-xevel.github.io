@@ -35,7 +35,7 @@
         border-style: none;
         border-radius: 5px;
         padding: 10px 0px;
-        background-color:lightgreen;
+      
         margin: 10px;
     }
     #h2  button a{
@@ -47,9 +47,8 @@
     padding: 10px 10px;
     }
     #h2 button a:hover{
-        background-color: white;
-        transition:0.5s ease-in-out;
-        
+        background-color:#b7f6f5;
+        transition:0.3s ease-in-out;
     }
     .buy{
         display: flex;
@@ -129,18 +128,30 @@
       }
       #p{
           text-align: center;
+          font-weight: bold ;
+          font-size: 40px;
       }
-      button{
-          padding: 25px 25px;
-          font-size: 25px;
-        border-radius: 5px;
-        }
+    #button{
+          padding: 22px 22px;
+          font-size: 30px;
+               border-radius: 50px;
+       border: 0px;
+       background-color: #0c35c5    ;
+       color: white;
+       font-weight: bold;
+        cursor: pointer;    
+    }
+    #button:hover{
+        background-color:#dbdeeb;
+        color: rgb(44, 43, 43);
+        transition: 0.3s ease-in-out;
+    }
       footer{
         display: flex;
         justify-content: center;
         align-items: center;
-        background-color: gray;
-        color: white;
+        background-color: #d4dddc;
+        color: black;
       }
       .copyright{
         width: 60%;
